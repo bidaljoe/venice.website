@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venice Jewellery Uganda - Luxury Jewelry & Engagement Rings</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#C5A572',secondary:'#000000'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-lato { font-family: 'Lato', sans-serif; }
+.hero-overlay {
+background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
+}
+.gold-gradient {
+background: linear-gradient(135deg, #C5A572 0%, #D4B882 100%);
+}
+.testimonial-card {
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.95);
+}
+.image-hover {
+transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-hover:hover {
+transform: scale(1.05) rotate(1deg);
+}
+.collection-image {
+transition: all 0.5s ease-in-out;
+}
+.collection-image:hover {
+transform: scale(1.1);
+filter: brightness(1.1);
+}
+.blog-image {
+transition: all 0.4s ease;
+}
+.blog-image:hover {
+transform: scale(1.08);
+filter: contrast(1.1);
+}
+</style>
+</head>
+<body class="font-lato bg-white">
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<div class="flex items-center">
+<img src="images/venice.png.png" alt="venice Jewellery" class="h-24 transition-transform duration-500 hover:rotate-6 hover:scale-105"
+
+
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#collections" class="text-gray-700 hover:text-primary transition-colors">Collections</a>
+<a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#blog" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+<a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-search-line"></i>
+</button>
+<button class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-user-line"></i>
+</button>
+<button class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-shopping-bag-line"></i>
+</button>
+<a href="tel:+256700000000" class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-phone-line"></i>
+</a>
+<a href="https://wa.me/256700000000" class="w-8 h-8 flex items-center justify-center text-green-600 hover:text-green-700 transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+<button class="md:hidden w-8 h-8 flex items-center justify-center text-gray-700" id="mobile-menu-btn">
+<i class="ri-menu-line"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm hidden" id="mobile-menu-overlay">
+<div class="fixed right-0 top-0 h-full w-80 bg-white shadow-xl transform translate-x-full transition-transform duration-300" id="mobile-menu">
+<div class="p-6">
+<div class="flex items-center justify-between mb-8">
+<div class="font-playfair text-xl font-bold text-secondary">Menu</div>
+<button class="w-8 h-8 flex items-center justify-center text-gray-700" id="mobile-menu-close">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<nav class="space-y-6">
+<a href="#collections" class="block text-lg text-gray-700 hover:text-primary transition-colors">Collections</a>
+<a href="#about" class="block text-lg text-gray-700 hover:text-primary transition-colors">About</a>
+<a href="#blog" class="block text-lg text-gray-700 hover:text-primary transition-colors">Blog</a>
+<a href="#contact" class="block text-lg text-gray-700 hover:text-primary transition-colors">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20jewelry%20store%20interior%20with%20elegant%20diamond%20rings%20and%20gold%20necklaces%20displayed%20on%20black%20velvet%2C%20sophisticated%20lighting%2C%20modern%20minimalist%20design%2C%20premium%20showcase%2C%20depth%20of%20field%2C%20professional%20photography%2C%20warm%20golden%20lighting%20creating%20luxurious%20atmosphere&width=1920&height=1080&seq=hero-jewelry&orientation=landscape')"></div>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+<h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
+Exquisite Jewelry<br>
+<span class="text-primary">Crafted for You</span>
+</h1>
+<p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+Discover Uganda's finest collection of luxury jewelry, engagement rings, and bespoke designs crafted with international quality and local artistry.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+<Button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:animate-bounce">
+  Explore Our Collection
+</Button>
+
+Book Consultation
+</button>
+</div>
+<div class="mt-12 text-sm text-gray-300">
+As featured in Vogue Uganda & Elle Africa
+</div>
+</div>
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+<i class="ri-arrow-down-line text-2xl"></i>
+</div>
+</section>
+<!-- Product Categories -->
+<section id="collections" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-secondary mb-4">Our Collections</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover our carefully curated selection of fine jewelry, each piece telling its own story of elegance and craftsmanship.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+<div class="aspect-square bg-cover bg-center collection-image overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Elegant%20diamond%20engagement%20rings%20collection%20on%20white%20silk%20fabric%2C%20sparkling%20solitaire%20and%20halo%20settings%2C%20professional%20jewelry%20photography%2C%20soft%20lighting%2C%20luxury%20presentation%2C%20clean%20white%20background&width=400&height=400&seq=rings-category&orientation=squarish')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center text-white">
+<h3 class="font-playfair text-2xl font-bold mb-2">Rings</h3>
+<button class="gold-gradient text-black px-6 py-2 !rounded-button font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+Shop Now
+</button>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+<div class="aspect-square bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20gold%20and%20diamond%20necklaces%20displayed%20on%20black%20velvet%20jewelry%20stand%2C%20elegant%20pendant%20designs%2C%20chain%20necklaces%2C%20professional%20jewelry%20photography%2C%20warm%20lighting%2C%20premium%20showcase%20presentation&width=400&height=400&seq=necklaces-category&orientation=squarish')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center text-white">
+<h3 class="font-playfair text-2xl font-bold mb-2">Necklaces</h3>
+<button class="gold-gradient text-black px-6 py-2 !rounded-button font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+Shop Now
+</button>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+<div class="aspect-square bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Elegant%20gold%20and%20silver%20bracelets%20collection%20on%20white%20marble%20surface%2C%20tennis%20bracelets%2C%20charm%20bracelets%2C%20luxury%20jewelry%20photography%2C%20soft%20natural%20lighting%2C%20clean%20minimalist%20presentation&width=400&height=400&seq=bracelets-category&orientation=squarish')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center text-white">
+<h3 class="font-playfair text-2xl font-bold mb-2">Bracelets</h3>
+<button class="gold-gradient text-black px-6 py-2 !rounded-button font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+Shop Now
+</button>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+<div class="aspect-square bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20diamond%20and%20gold%20earrings%20collection%20on%20silk%20fabric%2C%20stud%20earrings%2C%20drop%20earrings%2C%20hoop%20earrings%2C%20luxury%20jewelry%20photography%2C%20elegant%20presentation%2C%20soft%20lighting%2C%20clean%20white%20background&width=400&height=400&seq=earrings-category&orientation=squarish')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-300"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center text-white">
+<h3 class="font-playfair text-2xl font-bold mb-2">Earrings</h3>
+<button class="gold-gradient text-black px-6 py-2 !rounded-button font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+Shop Now
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Filters -->
+<div class="mt-16 flex flex-wrap justify-center gap-4">
+<div class="flex items-center space-x-2">
+<span class="text-gray-700 font-medium">Filter by:</span>
+</div>
+<button class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+All Materials
+<i class="ri-arrow-down-s-line ml-1"></i>
+</button>
+<button class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+Price Range
+<i class="ri-arrow-down-s-line ml-1"></i>
+</button>
+<button class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 hover:border-primary hover:text-primary transition-colors whitespace-nowrap">
+Style
+<i class="ri-arrow-down-s-line ml-1"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Collections -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-secondary mb-4">Featured Collections</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Handpicked selections that showcase the finest in contemporary and classic jewelry design.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center image-hover overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Luxury%20bridal%20jewelry%20collection%20with%20diamond%20engagement%20rings%20and%20wedding%20bands%20on%20white%20silk%2C%20elegant%20bridal%20set%2C%20sparkling%20diamonds%2C%20romantic%20lighting%2C%20premium%20jewelry%20photography%2C%20clean%20white%20background&width=500&height=375&seq=bridal-collection&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-secondary mb-2">Bridal Collection</h3>
+<p class="text-gray-600 mb-4">Celebrate your special day with our exquisite bridal jewelry, featuring engagement rings and wedding bands that symbolize eternal love.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+View Collection
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Contemporary%20gold%20jewelry%20collection%20with%20modern%20geometric%20designs%2C%20minimalist%20necklaces%20and%20earrings%2C%20sleek%20presentation%20on%20marble%20surface%2C%20professional%20jewelry%20photography%2C%20clean%20aesthetic%2C%20warm%20lighting&width=500&height=375&seq=contemporary-collection&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-secondary mb-2">Contemporary Classics</h3>
+<p class="text-gray-600 mb-4">Modern designs that blend traditional craftsmanship with contemporary aesthetics, perfect for the modern woman.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+View Collection
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Vintage%20inspired%20jewelry%20collection%20with%20antique%20gold%20designs%2C%20ornate%20patterns%2C%20classic%20elegance%2C%20vintage%20jewelry%20photography%20on%20dark%20velvet%20background%2C%20warm%20golden%20lighting%2C%20luxury%20presentation&width=500&height=375&seq=vintage-collection&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-secondary mb-2">Vintage Elegance</h3>
+<p class="text-gray-600 mb-4">Timeless pieces inspired by vintage designs, each telling a story of elegance and sophistication from bygone eras.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+View Collection
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-secondary mb-6">Our Story</h2>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Founded in the heart of Kampala, Venice Jewellery Uganda represents the perfect fusion of local artistry and international excellence. Our journey began with a simple vision: to create jewelry that celebrates the beauty and spirit of Uganda while meeting the highest global standards.
+</p>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Each piece in our collection is meticulously crafted by skilled artisans who understand that jewelry is more than decoration—it's a symbol of love, achievement, and personal expression. From engagement rings that mark life's most precious moments to everyday pieces that add elegance to your style, we create jewelry that tells your story.
+</p>
+<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+Our commitment to quality extends beyond our products to our service. We believe in building relationships with our clients, understanding their needs, and creating pieces that exceed their expectations.
+</p>
+<button class="gold-gradient text-black px-8 py-4 !rounded-button font-semibold text-lg hover:shadow-lg transition-all duration-300 whitespace-nowrap">
+Learn More About Us
+</button>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-cover bg-center rounded-2xl shadow-xl" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20jewelry%20craftsman%20working%20on%20intricate%20gold%20ring%20design%20in%20modern%20workshop%2C%20detailed%20craftsmanship%2C%20precision%20tools%2C%20warm%20lighting%2C%20artisan%20at%20work%2C%20luxury%20jewelry%20making%20process%2C%20clean%20workshop%20environment&width=600&height=750&seq=craftsman-story&orientation=portrait')"></div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-black p-6 rounded-2xl shadow-lg">
+<div class="text-center">
+<div class="font-playfair text-3xl font-bold">15+</div>
+<div class="text-sm font-medium">Years of Excellence</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-secondary mb-4">What Our Clients Say</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Read the stories of love, joy, and satisfaction from our valued clients across Uganda.</p>
+</div>
+<div class="relative overflow-hidden">
+<div class="flex transition-transform duration-500 ease-in-out" id="testimonial-slider">
+<div class="w-full flex-shrink-0 px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="testimonial-card p-6 rounded-2xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20elegant%20African%20woman%20wearing%20beautiful%20jewelry%2C%20smiling%2C%20natural%20lighting%2C%20clean%20background%2C%20high%20quality%20portrait%20photography&width=100&height=100&seq=client-1&orientation=squarish')"></div>
+<div>
+<h4 class="font-semibold text-secondary">Sarah Nakamura</h4>
+<div class="flex text-primary text-sm">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-700 italic">"My engagement ring from Venice Jewellery is absolutely stunning. The craftsmanship is exceptional, and the service was personalized and professional. I couldn't be happier with my choice!"</p>
+</div>
+<div class="testimonial-card p-6 rounded-2xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20handsome%20African%20man%20in%20elegant%20attire%2C%20confident%20smile%2C%20natural%20lighting%2C%20clean%20background%2C%20high%20quality%20portrait%20photography&width=100&height=100&seq=client-2&orientation=squarish')"></div>
+<div>
+<h4 class="font-semibold text-secondary">David Musoke</h4>
+<div class="flex text-primary text-sm">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-700 italic">"I wanted something special for my wife's anniversary, and Venice Jewellery created a custom necklace that exceeded all expectations. The attention to detail is remarkable."</p>
+</div>
+<div class="testimonial-card p-6 rounded-2xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-cover bg-center rounded-full mr-4" style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20portrait%20of%20beautiful%20African%20woman%20with%20elegant%20jewelry%2C%20warm%20smile%2C%20natural%20lighting%2C%20clean%20background%2C%20high%20quality%20portrait%20photography&width=100&height=100&seq=client-3&orientation=squarish')"></div>
+<div>
+<h4 class="font-semibold text-secondary">Grace Namuli</h4>
+<div class="flex text-primary text-sm">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-700 italic">"The quality of jewelry at Venice is unmatched in Uganda. I've purchased several pieces over the years, and each one continues to shine as beautifully as the day I bought it."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Preview -->
+<section id="blog" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-secondary mb-4">Latest from Our Blog</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover jewelry care tips, fashion trends, and inspiring stories from the world of fine jewelry.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center blog-image overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Jewelry%20care%20guide%20with%20cleaning%20tools%20and%20sparkling%20diamond%20ring%20on%20white%20cloth%2C%20professional%20jewelry%20maintenance%2C%20care%20instructions%2C%20clean%20presentation%2C%20soft%20lighting&width=500&height=375&seq=blog-1&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium mr-3">Care Tips</span>
+<span>5 min read</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-secondary mb-3 hover:text-primary transition-colors">How to Keep Your Jewelry Sparkling: Essential Care Tips</h3>
+<p class="text-gray-600 mb-4">Learn the professional secrets to maintaining your precious jewelry's brilliance and extending its lifespan with proper care techniques.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+Read More
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</article>
+<article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('https://readdy.ai/api/search-image?query=Romantic%20proposal%20scene%20with%20elegant%20engagement%20ring%20in%20velvet%20box%2C%20candlelight%20dinner%20setting%2C%20romantic%20atmosphere%2C%20luxury%20restaurant%2C%20beautiful%20presentation%2C%20warm%20lighting&width=500&height=375&seq=blog-2&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium mr-3">Love Stories</span>
+<span>3 min read</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-secondary mb-3 hover:text-primary transition-colors">Perfect Proposal Stories: Real Couples Share Their Magic Moments</h3>
+<p class="text-gray-600 mb-4">Be inspired by heartwarming proposal stories from couples who chose Venice Jewellery for their special moments.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+Read More
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</article>
+<article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/3] bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('https://readdy.ai/api/search-image?query=Fashion%20jewelry%20trends%20showcase%20with%20modern%20gold%20accessories%2C%20contemporary%20designs%2C%20stylish%20presentation%20on%20marble%20surface%2C%20fashion%20photography%2C%20elegant%20styling%2C%20natural%20lighting&width=500&height=375&seq=blog-3&orientation=landscape')"></div>
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-3">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium mr-3">Trends</span>
+<span>4 min read</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-secondary mb-3 hover:text-primary transition-colors">2024 Jewelry Trends: What's Hot in Ugandan Fashion</h3>
+<p class="text-gray-600 mb-4">Discover the latest jewelry trends making waves in Uganda's fashion scene and how to incorporate them into your style.</p>
+<button class="text-primary font-semibold hover:underline whitespace-nowrap">
+Read More
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer id="contact" class="bg-secondary text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="font-playfair text-2xl font-bold mb-4">Venice Jewellery</div>
+<p class="text-gray-300 mb-6">Uganda's premier destination for luxury jewelry, engagement rings, and bespoke designs.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-black rounded-full hover:bg-primary/80 hover:scale-125 hover:rotate-12 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<i class="ri-facebook-fill hover:animate-pulse"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-black rounded-full hover:bg-primary/80 hover:scale-125 hover:-rotate-12 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<i class="ri-instagram-line hover:animate-pulse"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-black rounded-full hover:bg-primary/80 hover:scale-125 hover:rotate-12 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<i class="ri-twitter-line hover:animate-pulse"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#collections" class="text-gray-300 hover:text-primary transition-colors">Collections</a></li>
+<li><a href="#about" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#blog" class="text-gray-300 hover:text-primary transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Custom Design</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+<div class="space-y-3">
+<div class="flex items-center group">
+<i class="ri-map-pin-line mr-3 text-primary group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300"></i>
+<span class="text-gray-300">Kampala Road, Kampala, Uganda</span>
+</div>
+<div class="flex items-center group">
+<i class="ri-phone-line mr-3 text-primary group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-300"></i>
+<a href="tel:+256740000084" class="text-gray-300 hover:text-primary transition-colors">+256 740000082</a>
+</div>
+<div class="flex items-center group">
+<i class="ri-mail-line mr-3 text-primary group-hover:scale-125 group-hover:rotate-12 transition-transform duration-300"></i>
+<a href="mailto:info@venicejewellery.ug" class="text-gray-300 hover:text-primary transition-colors">info@venicejewellery.ug</a>
+</div>
+<div class="flex items-center group">
+<i class="ri-whatsapp-line mr-3 text-green-500 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-300"></i>
+<a href="https://wa.me/256700000000" class="text-gray-300 hover:text-green-500 transition-colors">WhatsApp Us</a>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Newsletter</h4>
+<p class="text-gray-300 mb-4">Subscribe to receive updates on new collections and exclusive offers.</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+<button class="gold-gradient text-black px-6 py-2 !rounded-button font-semibold hover:shadow-lg transition-all duration-300 whitespace-nowrap">
+Subscribe
+</button>
+</div>
+<div class="mt-6">
+<h5 class="font-semibold mb-3">We Accept</h5>
+<div class="flex space-x-3">
+<div class="w-8 h-8 flex items-center justify-center text-blue-600 hover:scale-125 hover:rotate-12 transition-transform duration-300">
+<i class="ri-visa-line text-2xl"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center text-red-600 hover:scale-125 hover:-rotate-12 transition-transform duration-300">
+<i class="ri-mastercard-line text-2xl"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center text-primary hover:scale-125 hover:rotate-12 transition-transform duration-300">
+<i class="ri-smartphone-line text-xl"></i>
+</div>
+</div>
+<p class="text-xs text-gray-400 mt-2">MTN Mobile Money, Airtel Money</p>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 text-center">
+<p class="text-gray-400">&copy; 2025 Venice Jewellery Uganda. All rights reserved. | Privacy Policy | Terms of Service</p>
+
+
+</div>
+</div>
+</footer>
+<!-- WhatsApp Fixed Button -->
+<a href="https://wa.me/256740000082" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 hover:rotate-12 transform transition-all duration-300 animate-bounce z-50">
+<i class="ri-whatsapp-line text-2xl"></i>
+</a>
+<script id="mobile-menu-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+function openMenu() {
+mobileMenuOverlay.classList.remove('hidden');
+setTimeout(() => {
+mobileMenu.classList.remove('translate-x-full');
+}, 10);
+}
+function closeMenu() {
+mobileMenu.classList.add('translate-x-full');
+setTimeout(() => {
+mobileMenuOverlay.classList.add('hidden');
+}, 300);
+}
+mobileMenuBtn.addEventListener('click', openMenu);
+mobileMenuClose.addEventListener('click', closeMenu);
+mobileMenuOverlay.addEventListener('click', function(e) {
+if (e.target === mobileMenuOverlay) {
+closeMenu();
+}
+});
+});
+</script>
+<script id="header-scroll-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 100) {
+header.classList.add('bg-white/95');
+header.classList.remove('bg-white/90');
+} else {
+header.classList.add('bg-white/90');
+header.classList.remove('bg-white/95');
+}
+});
+});
+</script>
+<script id="smooth-scroll-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const offsetTop = targetElement.offsetTop - 80;
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
